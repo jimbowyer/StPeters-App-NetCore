@@ -16,13 +16,7 @@ namespace StPeters
         {
             const string cWEB = "www.st-peters.ca";
             GetSeasonVars(ref mstrSeason, ref mcolorBack, ref mcolorText, ref mstrYearCycle);
-            mDoW = WhatDay();
-
-            if (Device.RuntimePlatform == Device.Android)
-            {
-                //TBC - set header bar color?                
-            }
-
+            mDoW = WhatDay();         
 
             Button btnReading = new Button
             {
@@ -31,7 +25,7 @@ namespace StPeters
                 TextColor = mcolorText,
                 BorderWidth = 0,
                 BorderColor = mcolorBack,
-                WidthRequest = 250
+                WidthRequest = 290
             };
 
             btnReading.Clicked += (sender, args) =>

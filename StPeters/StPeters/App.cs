@@ -11,16 +11,13 @@ namespace StPeters
         {
             try
             {
-                // The root page of  application
+                // The root page of application
                 MainPage = new NavigationPage(new pageMain() { Title = " St. Peters" })
-                {
-                    //need white txt for androud but cant do if logic here :( White background hides android nav controls :(
-                    //BarBackgroundColor = Color.White,
-                    BarTextColor = Color.Silver
-
+                {                                       
+                    BarTextColor = Color.Silver,
+                    BarBackgroundColor = Color.Black
                 };
-                NavigationPage.SetHasNavigationBar(this, true);
-
+                NavigationPage.SetHasNavigationBar(this, true);            
             }
             catch (Exception ex)
             {

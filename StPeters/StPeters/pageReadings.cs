@@ -17,9 +17,10 @@ namespace StPeters
 
             ToolbarItem tbMenu = new ToolbarItem
             {
-                Text = "| Mass Readings",
+                Text = "| Mass Readings"
                 //custom menu work below for each platform
             };
+
 
             switch (Device.RuntimePlatform)
             {
@@ -37,7 +38,11 @@ namespace StPeters
                     {
                         ToolbarItems.Add(new ToolbarItem("| Mass Readings", "", () =>
                         {
-                            Navigation.PushAsync(new pageMassReadings());
+                            Navigation.PushAsync(new pageMassReadings()
+                            {
+                                BarTextColor = Color.Silver,
+                                BarBackgroundColor = Color.White
+                            });
                         }));
                         break;
                     }
