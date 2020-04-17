@@ -18,15 +18,9 @@ namespace StPeters
             GetSeasonVars(ref mstrSeason, ref mcolorBack, ref mcolorText, ref mstrYearCycle);
             mDoW = WhatDay();
 
-            if (Device.RuntimePlatform == Device.iOS)
-            {
-                //remove this?
-                mstrSeason = " " + mstrSeason + " ";
-            }
-
             if (Device.RuntimePlatform == Device.Android)
             {
-                //set header bar color?                
+                //TBC - set header bar color?                
             }
 
 
@@ -53,7 +47,6 @@ namespace StPeters
                 TextColor = mcolorText,
                 BorderWidth = 0,
                 BorderColor = mcolorBack
-                //WidthRequest = 250
             };
 
             btnMassReading.Clicked += (sender, args) =>
@@ -64,7 +57,7 @@ namespace StPeters
 
             Button btnChurchSearch = new Button
             {
-                Text = "Find mass/reconciliation",
+                Text = "Find Mass/Reconciliation",
                 BackgroundColor = mcolorBack,
                 TextColor = mcolorText,
                 BorderWidth = 0,
@@ -111,7 +104,7 @@ namespace StPeters
             {
                 Source = "stPete.png",
                 IsVisible = true,
-                Aspect = Aspect.AspectFit
+                Aspect = Aspect.AspectFill
             };
 
             ToolbarItem tbMenu = new ToolbarItem
@@ -147,7 +140,7 @@ namespace StPeters
                         tbMenu.Order = ToolbarItemOrder.Default;
                         ToolbarItems.Add(new ToolbarItem("About", "info.png", () =>
                         {
-                            //Navigation.PushAsync(new pageAbout());
+                            Navigation.PushAsync(new pageAbout());
                         }));
                         break;
                     }
@@ -180,7 +173,7 @@ namespace StPeters
             try
             {
                 seaNow = cal.SeasonOf(DateTime.Now);
-                pSeason = seaNow.SeasonName; // + " - " + DateTime.Now.ToString("D");
+                pSeason = seaNow.SeasonName;
                 pCycle = litCal.GetChurchYear(DateTime.Now).ToString();
 
                 switch (seaNow.SeasonColor)

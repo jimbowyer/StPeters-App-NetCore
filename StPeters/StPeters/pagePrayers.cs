@@ -15,10 +15,9 @@ namespace StPeters
 
             WebView browser = new WebView
             {
-                Source = hSource,
-                HeightRequest = 500,
-                WidthRequest = 450,
-                HorizontalOptions = LayoutOptions.CenterAndExpand
+                Source = hSource,                
+                MinimumWidthRequest = Application.Current.MainPage.Width,
+                MinimumHeightRequest = Application.Current.MainPage.Height
             };
 
             Content = browser;

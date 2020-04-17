@@ -56,7 +56,8 @@ namespace StPeters
 
             WebView browser = new WebView
             {
-                Source = sUrl
+                Source = sUrl,
+                MinimumWidthRequest = Application.Current.MainPage.Width
             };
 
             Content = browser;

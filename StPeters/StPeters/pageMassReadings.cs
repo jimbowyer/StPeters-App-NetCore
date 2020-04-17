@@ -24,9 +24,7 @@ namespace StPeters
                 {
                     Source = cNOVALIS + cREAD1 + sDate,
                     HeightRequest = Application.Current.MainPage.Height,
-                    WidthRequest = Application.Current.MainPage.Width,
-                    VerticalOptions = LayoutOptions.CenterAndExpand,
-                    HorizontalOptions = LayoutOptions.CenterAndExpand
+                    WidthRequest = Application.Current.MainPage.Width 
                 },
             }
             );
