@@ -4,7 +4,7 @@ Xamarin.Forms app built for local Roman Catholic church. This is an all new .NET
 https://play.google.com/store/apps/details?id=st_Peters_RC_Calgary.St_Peters_RC_Calgary <br/>
 https://itunes.apple.com/us/app/st-peters-rc-calgary/id985813714
 
-Its been in use in various versions since 2015, finally got around to porting across to newer .NET Core framework Apr 2020. It is licensed open source so feel free to clone and leverage to build for your own parish/diocese.
+Its been in use in various versions since 2015, finally got around to porting across to newer .NET Core framework Apr 2020. It is licensed open source so feel free to clone and leverage to build a version for your own parish/diocese.
 
 To deploy in own dev environment:
 1. Clone Repo locally.
