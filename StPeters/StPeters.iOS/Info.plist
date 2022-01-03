@@ -21,11 +21,11 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>10.3</string>
+	<string>12.4</string>
 	<key>CFBundleDisplayName</key>
 	<string>St Peters</string>
 	<key>CFBundleVersion</key>
-	<string>2.0.02.0</string>
+	<string>2.1.01.0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>NSAppTransportSecurity</key>
@@ -40,6 +40,6 @@
 	<key>CFBundleIdentifier</key>
 	<string>ca.st-peters.rockapp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.02</string>
+	<string>2.1.01</string>
 </dict>
 </plist>
