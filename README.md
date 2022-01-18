@@ -8,7 +8,9 @@ Its been in use in various versions since 2015, finally got around to porting ac
 
 To deploy in own dev environment:
 1. Clone Repo locally.
-2. Open in Visual Studio 2019 with Xamarin Add-in installed. 
+2. Open in Visual Studio 2019+ with Xamarin Add-in installed. 
      [note: solution built using VS Pro edition, recreate sln if using another edition e.g. enterprise.]
 2. Restore nuget packages
 3. Build, run 
+
+Refreshed code dependencies and store builds - Jan 2022. Functionally same, see store links for details.
