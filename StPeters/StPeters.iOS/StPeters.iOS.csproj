@@ -340,4 +340,7 @@
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\youtube-logo.png" />
+  </ItemGroup>
 </Project>

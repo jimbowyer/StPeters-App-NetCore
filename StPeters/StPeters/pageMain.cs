@@ -62,7 +62,6 @@ namespace StPeters
 
             btnChurchSearch.Clicked += async (sender, args) =>
             {
-                //open church search page:
                 Uri uri;
                 Location location = await Geolocation.GetLastKnownLocationAsync();
                 if (location != null)
@@ -73,15 +72,13 @@ namespace StPeters
                 }
                 else
                 {
-                    //use default
+                    //use default position
                     uri = new Uri("https://" + cSEARCH + cDEFQUE);
                 }
 
-                //open search in browser:                
+                //open church search in browser:                
                 await Launcher.OpenAsync(uri);
 
-                //old to remove:
-                //Navigation.PushAsync(new pageChurchSearch());
             };
 
             Button btnBulletins = new Button
