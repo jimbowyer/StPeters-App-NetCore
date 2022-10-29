@@ -15,6 +15,8 @@ namespace StPeters
         public pageMain()
         {
             const string cWEB = "www.st-peters.ca";
+            const string cSEARCH = "www.google.com/maps/search/catholic/@";
+            const string cDEFQUE = "51.114515,-114.2201127,13z?hl=en-CA";
             GetSeasonVars(ref mstrSeason, ref mcolorBack, ref mcolorText, ref mstrYearCycle);
             mDoW = WhatDay();         
 
@@ -58,10 +60,28 @@ namespace StPeters
                 BorderColor = mcolorBack
             };
 
-            btnChurchSearch.Clicked += (sender, args) =>
+            btnChurchSearch.Clicked += async (sender, args) =>
             {
-                //open ch search page:                
-                Navigation.PushAsync(new pageChurchSearch());
+                //open church search page:
+                Uri uri;
+                Location location = await Geolocation.GetLastKnownLocationAsync();
+                if (location != null)
+                {
+                    string sLong = location.Longitude.ToString();
+                    string sLat = location.Latitude.ToString();
+                    uri = new Uri("https://" + cSEARCH + sLat + "," + sLong + ",13z");
+                }
+                else
+                {
+                    //use default
+                    uri = new Uri("https://" + cSEARCH + cDEFQUE);
+                }
+
+                //open search in browser:                
+                await Launcher.OpenAsync(uri);
+
+                //old to remove:
+                //Navigation.PushAsync(new pageChurchSearch());
             };
 
             Button btnBulletins = new Button
