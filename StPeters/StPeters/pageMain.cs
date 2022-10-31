@@ -16,7 +16,7 @@ namespace StPeters
         {
             const string cWEB = "www.st-peters.ca";
             const string cSEARCH = "www.google.com/maps/search/catholic/@";
-            const string cDEFQUE = "51.114515,-114.2201127,13z?hl=en-CA";
+            const string cDEFQUE = "51.114515,-114.2201127,11z?hl=en-CA";
             GetSeasonVars(ref mstrSeason, ref mcolorBack, ref mcolorText, ref mstrYearCycle);
             mDoW = WhatDay();         
 

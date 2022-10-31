@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>St Peters</string>
 	<key>CFBundleVersion</key>
-	<string>2.1.01.0</string>
+	<string>2.2.01.0</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>NSAppTransportSecurity</key>
@@ -40,7 +40,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>ca.st-peters.rockapp</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.1.01</string>
+	<string>2.2.01</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>location required to search for nearby catholic churches</string>
 </dict>

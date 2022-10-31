@@ -47,17 +47,15 @@
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <MtouchArch>
-    </MtouchArch>
-    <CodesignKey>Apple Development: James Bowyer (6WD3BGX6M7)</CodesignKey>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Distribution: James Bowyer (ZD6FL5P36A)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <OptimizePNGs>true</OptimizePNGs>
     <BuildIpa>true</BuildIpa>
-    <CodesignProvision>
-    </CodesignProvision>
+    <CodesignProvision>stpetersdistprovprofile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -341,6 +339,6 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\youtube-logo.png" />
+    <BundleResource Include="Resources\youtubelogo.png" />
   </ItemGroup>
 </Project>
