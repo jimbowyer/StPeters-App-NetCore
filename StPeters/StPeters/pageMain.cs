@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -11,6 +12,8 @@ namespace StPeters
         string mstrSeason;
         string mstrYearCycle;
         DayOfWeek mDoW;
+        //use to indicate if we are busy:
+        ActivityIndicator actIndicator = new ActivityIndicator { };
 
         public pageMain()
         {
@@ -45,11 +48,27 @@ namespace StPeters
                 BorderColor = mcolorBack
             };
 
-            btnMassReading.Clicked += (sender, args) =>
+            btnMassReading.Clicked += async (sender, args) =>
             {
-                //open readings page:
-                Navigation.PushAsync(new pageMassReadings());
+                //open readings page:               
+                //Start Activity indicator on main thread (issues with showing it consistently without)
+                MainThread.BeginInvokeOnMainThread(StartActivityIndicator);
+                await Task.Run(() => StartActivityIndicator());
+                await Navigation.PushAsync(new pageMassReadings());
+                actIndicator.IsEnabled = false;
+                actIndicator.IsRunning = false;
+                actIndicator.IsVisible = false;
             };
+
+            void StartActivityIndicator()
+            {
+                // show spinning icon while working:
+                actIndicator.Color = mcolorBack;
+                actIndicator.Scale = 3;
+                actIndicator.IsEnabled = true;
+                actIndicator.IsRunning = true;
+                actIndicator.IsVisible = true;
+            }
 
             Button btnChurchSearch = new Button
             {

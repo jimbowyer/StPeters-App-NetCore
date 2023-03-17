@@ -8,12 +8,14 @@ namespace StPeters
     {
         public pageReadings()
         {
-            const string cSCRIPTUREWEB = "https://dailyscripture.servantsoftheword.org/";
+            const string cSCRIPTUREWEB = "https://www.dailyscripture.net/daily-meditation/";
 
-            string sYear = DateTime.Now.Year.ToString();
-            string sMon = DateTime.Now.ToString("MMM").ToLower();
-            string sDay = DateTime.Now.Day.ToString();
-            string sUrl = cSCRIPTUREWEB + "readings/" + sYear + "/" + sMon + sDay + ".htm";
+            //EDIT MAR 2023 - new format on site so switching out to above and trialing for this version!
+            //const string cSCRIPTUREWEB = "https://dailyscripture.servantsoftheword.org/";
+            //string sYear = DateTime.Now.Year.ToString();
+            //string sMon = DateTime.Now.ToString("MMM").ToLower();
+            //string sDay = DateTime.Now.Day.ToString();
+            //string sUrl = cSCRIPTUREWEB + "readings/" + sYear + "/" + sMon + sDay + ".htm";
 
             ToolbarItem tbMenu = new ToolbarItem
             {
@@ -61,7 +63,7 @@ namespace StPeters
 
             WebView browser = new WebView
             {
-                Source = sUrl,
+                Source = cSCRIPTUREWEB,
                 MinimumWidthRequest = Application.Current.MainPage.Width
             };
 
