@@ -8,7 +8,7 @@ namespace StPeters
 {
     public class pageMassReadings : TabbedPage
     {
-        const string cNOVALIS = "http://ec2-34-245-7-114.eu-west-1.compute.amazonaws.com/";
+        const string cNOVALIS = "https://readings.livingwithchrist.ca/";
         const string cREAD1 = "daily-texts/reading/";
         const string cPSALM = "daily-texts/psalm/";
         const string cREAD2 = "daily-texts/reading2/";

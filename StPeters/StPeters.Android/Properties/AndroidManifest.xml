@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2301" android:versionName="2.3.01" package="st_Peters_RC_Calgary.St_Peters_RC_Calgary" android:installLocation="auto">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2302" android:versionName="2.3.02" package="st_Peters_RC_Calgary.St_Peters_RC_Calgary" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="25" android:targetSdkVersion="33" />
 	<application android:label="St Peters RC Calgary" android:icon="@drawable/icon" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

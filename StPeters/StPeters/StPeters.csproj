@@ -6,7 +6,7 @@
     <AssemblyVersion>2.3.01.*</AssemblyVersion>
     <FileVersion>2.3.01.0</FileVersion>
     <Deterministic>false</Deterministic>
-    <Version>2.3.0</Version>
+    <Version>2.3.02</Version>
     <RepositoryUrl>https://github.com/jimbowyer/StPeters-App-NetCore</RepositoryUrl>
   </PropertyGroup>
 
@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2515" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.7.3" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2578" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.7" />
   </ItemGroup>
 
   <ItemGroup>
