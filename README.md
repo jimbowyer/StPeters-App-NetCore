@@ -1,4 +1,5 @@
 # StPeters-App-NetCore
+RETIRED - check out new Maui based app to which this code was migrated.
 Xamarin.Forms app built for local Roman Catholic church. This is an all new .NET Core version ported across from original xamarin forms app in separate St Peters repo. Targets Android/iOS using Xamarin Forms (>standard v2.1 with .NET Core 6). Working versions of this app are published in respective app stores:
 
 https://play.google.com/store/apps/details?id=st_Peters_RC_Calgary.St_Peters_RC_Calgary <br/>
